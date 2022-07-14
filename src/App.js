@@ -12,7 +12,7 @@ import './App.css'
 
 const App = () => {
   return (
-    <div className='css-1v5z4dq-MuiPaper-root-MuiCard-root'> 
+    <div> 
       <Router>
         <Header />
           <Routes>

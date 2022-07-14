@@ -1,8 +1,17 @@
 import React from 'react'
-import Card from '../components/Card'
+import ExperienceCard from '../components/ExperienceCard'
 import { Grid } from '@mui/material'
 
 const Experience = () => {
+  const data = [
+    {
+      title: "Shopolytics",
+      date: "May, 2022",
+      img: "profile_pic",
+      description: "I developed a dashboard along side a SSR front end developer for the landing page of our clients website.",
+      techs: ["VueJS", "Tailwind", "Laravel", "Docker"]
+    }
+  ]
   return (
     <Grid
       container
@@ -10,8 +19,10 @@ const Experience = () => {
       justifyContent="center"
       alignItems="center"
       sx={{ my: 3 }}>
-      <Card />
-    </Grid>
+        {data.map((job, i)=>{
+          return <ExperienceCard job={job} key={i} />
+        })}
+     </Grid>
   )
 }
 

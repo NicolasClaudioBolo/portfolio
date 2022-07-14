@@ -23,20 +23,22 @@ const ExpandMore = styled((props) => {
   }),
 }));
 
-export default function RecipeReviewCard() {
+export default function ExperienceCard({job}) {
   const [expanded, setExpanded] = React.useState(false);
-  const [open, setOpen] = React.useState(false);
+  console.log(job, "job")
 
-  const handleExpandClick = (isShopolytics) => {
-    isShopolytics ? setExpanded(!expanded) : setOpen(!open);
+  const handleExpandClick = () => {
+    setExpanded(!expanded);
   };
+
+const work = job
 
   return (
     <div>
         <Card sx={{ maxWidth: 345 }}>
         <CardHeader
-            title="Shopolytics"
-            subheader="May, 2022"
+            title={work.title}
+            subheader={work.date}
         />
         <CardMedia
             component="img"
@@ -46,13 +48,13 @@ export default function RecipeReviewCard() {
         />
         <CardContent>
             <Typography variant="body2" color="text.primary">
-            I developed a dashboard along side a SSR front end developer for the landing page of our clients website.
+            {work.description}
             </Typography>
         </CardContent>
         <CardActions disableSpacing>
             <ExpandMore
             expand={expanded}
-            onClick={handleExpandClick(true)}
+            onClick={handleExpandClick}
             aria-expanded={expanded}
             aria-label="show more"
             >
@@ -72,7 +74,7 @@ export default function RecipeReviewCard() {
         </Collapse>
         </Card>
 
-        <Card sx={{ maxWidth: 345 }}>
+        {/* <Card sx={{ maxWidth: 345 }}>
         <CardHeader
             title="Estudio Frenkel"
             subheader="Since March, 2022"
@@ -109,7 +111,7 @@ export default function RecipeReviewCard() {
             </Typography>
             </CardContent>
         </Collapse>
-        </Card>
+        </Card> */}
     </div>
   );
 }
