@@ -8,10 +8,11 @@ import Profile from './views/Profile';
 import Experience from './views/Experience';
 import Skills from './views/Skills';
 import Contact from './views/Contact';
+import './App.css'
 
 const App = () => {
   return (
-    <div> 
+    <div className='css-1v5z4dq-MuiPaper-root-MuiCard-root'> 
       <Router>
         <Header />
           <Routes>

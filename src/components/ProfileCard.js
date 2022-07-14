@@ -32,7 +32,7 @@ export default function MediaCard() {
             </Typography>
           </CardContent>
           <CardActions>
-            <Button size="small">Download resume</Button>
+            <Button size="small" sx={{mx:'auto'}}>Download resume</Button>
           </CardActions>
         </Card>
       </Grid>

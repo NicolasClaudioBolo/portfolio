@@ -17,12 +17,12 @@ const bull = (
 
 const card = (
   <React.Fragment>
-    <CardContent sx={{mx:20}}>
+    <CardContent sx={{mx:10, mt:10}}>
       <Typography sx={{ fontSize: 20 }} color="text.secondary" gutterBottom>
         About me
       </Typography>
       <Typography variant="h5" component="div">
-      I'm a young front end developer, proactive, with aims to grow professionally and make use of the knowledge acquired in Coderhouse bootcamps mentioned below. I'm truly eager to start my professional career in the world of IT. I'm constantly learning new dev tools, and I have a great ability to work in teams.
+        I'm a young front end developer, proactive, with aims to grow professionally and make use of the knowledge acquired in Coderhouse bootcamps mentioned in my resume. I'm truly eager to start my professional career in the world of IT. I'm constantly learning new dev tools, and I have a great ability to work in teams.
       </Typography>
     </CardContent>
   </React.Fragment>
