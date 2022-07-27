@@ -43,8 +43,8 @@ const work = job
         <CardMedia
             component="img"
             height="194"
-            image={img}
-            alt="Shopolytics"
+            image={work.img}
+            alt={work.alt}
         />
         <CardContent>
             <Typography variant="body2" color="text.primary">
@@ -65,7 +65,7 @@ const work = job
             <CardContent>
             <Typography paragraph>Used technologies:</Typography>
             <Typography paragraph>
-                VueJS, Tailwind, Laravel Sail and Docker.
+                {work.techs}
             </Typography>
             <Typography>
                 <a href="#">View code</a>
@@ -73,45 +73,6 @@ const work = job
             </CardContent>
         </Collapse>
         </Card>
-
-        {/* <Card sx={{ maxWidth: 345 }}>
-        <CardHeader
-            title="Estudio Frenkel"
-            subheader="Since March, 2022"
-        />
-        <CardMedia
-            component="img"
-            height="194"
-            image={img1}
-            alt="Estudio Frenkel"
-        />
-        <CardContent>
-            <Typography variant="body2" color="text.primary">
-            I'm currently developing a website for a small lawyers firm from Buenos Aires.
-            </Typography>
-        </CardContent>
-        <CardActions disableSpacing>
-            <ExpandMore
-            expand={open}
-            onClick={handleExpandClick(false)}
-            aria-expanded={open}
-            aria-label="show more"
-            >
-            <ExpandMoreIcon />
-            </ExpandMore>
-        </CardActions>
-        <Collapse in={open} timeout="auto" unmountOnExit>
-            <CardContent>
-            <Typography paragraph>Used technologies:</Typography>
-            <Typography paragraph>
-                ReactJS, Reactstrap and pure CSS.
-            </Typography>
-            <Typography>
-                <a href="#">View code</a>
-            </Typography>
-            </CardContent>
-        </Collapse>
-        </Card> */}
     </div>
   );
 }
