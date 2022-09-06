@@ -93,17 +93,16 @@ export default function MenuListComposition() {
                     aria-labelledby="composition-button"
                     onKeyDown={handleListKeyDown}>
                     <MenuItem onClick={handleClose}>
-                      <Link to="/Profile">
-                            Profile
-                      </Link>
-                    </MenuItem>
-                    <MenuItem onClick={handleClose}>
-                      <Link to="/Experience">
+                      <Link to="/Experience" style={{textDecoration:"none", color:"black"}}>
                             Experience
                       </Link>
                     </MenuItem>
-                    <MenuItem onClick={handleClose}>Skills</MenuItem>
-                    <MenuItem onClick={handleClose}>Contact</MenuItem>
+                    <MenuItem onClick={handleClose} style={{textDecoration:"none", color:"black"}}>
+                      Skills
+                    </MenuItem>
+                    <MenuItem onClick={handleClose} style={{textDecoration:"none", color:"black"}}>
+                      Contact
+                    </MenuItem>
                   </MenuList>
                 </ClickAwayListener>
               </Paper>

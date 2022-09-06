@@ -25,8 +25,6 @@ const ExpandMore = styled((props) => {
 
 export default function ExperienceCard({job}) {
   const [expanded, setExpanded] = React.useState(false);
-  console.log(job, "job")
-
   const handleExpandClick = () => {
     setExpanded(!expanded);
   };
@@ -35,7 +33,7 @@ const work = job
 
   return (
     <div>
-        <Card sx={{ maxWidth: 345 }}>
+        <Card sx={{ maxWidth: 345, my:3, mx:5 }}>
         <CardHeader
             title={work.title}
             subheader={work.date}

@@ -4,7 +4,6 @@ import AppBar from '@mui/material/AppBar';
 import Box from '@mui/material/Box';
 import Toolbar from '@mui/material/Toolbar';
 import InputBase from '@mui/material/InputBase';
-import SearchIcon from '@mui/icons-material/Search';
 import Dropdown from './Dropdown'
 import HomeIcon from '@mui/icons-material/Home';
 import {Link} from 'react-router-dom'
@@ -54,20 +53,11 @@ export default function SearchAppBar() {
   return (
     <Box sx={{ flexGrow: 1 }}>
       <AppBar position="static">
-        <Toolbar>
+        <Toolbar sx={{ml:6}}>
           <Dropdown />
           <Link to='/'>
-            <HomeIcon sx={{ fontSize: 40, mx: 8 }} />
+            <HomeIcon sx={{ fontSize: 40, ml:16, color: "#f44336" }} />
           </Link>
-          <Search>
-            <SearchIconWrapper>
-              <SearchIcon />
-            </SearchIconWrapper>
-            <StyledInputBase
-              placeholder="Search…"
-              inputProps={{ 'aria-label': 'search' }}
-            />
-          </Search>
         </Toolbar>
       </AppBar>
     </Box>

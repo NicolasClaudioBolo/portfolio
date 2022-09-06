@@ -24,16 +24,22 @@ const Experience = () => {
     }
   ]
   return (
+    <div container>
     <Grid
       container
-      direction="column"
+      direction="row"
       justifyContent="center"
       alignItems="center"
       sx={{ my: 3 }}>
         {data.map((job, i)=>{
-          return <ExperienceCard job={job} key={i} />
+          return(
+            <div direction="column" xs={12} sm={6}> 
+              <ExperienceCard job={job} key={i} />
+            </div>
+          )
         })}
      </Grid>
+     </div>
   )
 }
 

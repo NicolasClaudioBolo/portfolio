@@ -7,6 +7,7 @@ import Button from '@mui/material/Button';
 import Typography from '@mui/material/Typography';
 import img from '../assets/profile_pic.png'
 import { Grid } from '@mui/material';
+import profilePic from '../assets/profile_pic.png'
 
 export default function MediaCard() {
   return (
@@ -16,12 +17,13 @@ export default function MediaCard() {
       justifyContent="center"
       alignItems="center"
       sx={{ my: 3 }}>
-        <Card sx={{ maxWidth: 230 }}>
+        <Card sx={{ maxWidth: 300, borderRadius:5 }}>
           <CardMedia
             component="img"
             height="200"
             image={img}
             alt="Nicolas Bolo"
+            sx= {{m:2, width: "fit-content", display: "inline", borderRadius:5}}
           />
           <CardContent>
             <Typography gutterBottom variant="h5" component="div">
@@ -32,7 +34,8 @@ export default function MediaCard() {
             </Typography>
           </CardContent>
           <CardActions>
-            <Button size="small" sx={{mx:'auto'}}>Download resume</Button>
+            <Button size="small" sx={{mx:'auto'}} href='../assets/profile_pic.png' download={profilePic}>Download resume</Button>
+            {/* <a size="small" sx={{mx:'auto'}} href='../assets/profile_pic.png' download='profile_pic.png'>Download resume</a> */}
           </CardActions>
         </Card>
       </Grid>
