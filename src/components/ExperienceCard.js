@@ -9,8 +9,6 @@ import Collapse from '@mui/material/Collapse';
 import IconButton from '@mui/material/IconButton';
 import Typography from '@mui/material/Typography';
 import ExpandMoreIcon from '@mui/icons-material/ExpandMore';
-import img from '../assets/shopolytics.png'
-import img1 from '../assets/estudio_frenkel.png'
 
 const ExpandMore = styled((props) => {
   const { expand, ...other } = props;
@@ -33,7 +31,7 @@ const work = job
 
   return (
     <div>
-        <Card sx={{ maxWidth: 345, my:3, mx:5 }}>
+        <Card sx={{ maxWidth: 345, my:3, mx:5, borderRadius:5, boxShadow:10 }}>
         <CardHeader
             title={work.title}
             subheader={work.date}

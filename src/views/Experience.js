@@ -1,6 +1,6 @@
 import React from 'react'
 import ExperienceCard from '../components/ExperienceCard'
-import { Grid, requirePropFactory } from '@mui/material'
+import { Grid } from '@mui/material'
 import shopolytics_img from '../assets/shopolytics.png'
 import estudiofrenkel_img from '../assets/estudio_frenkel.png'
 
@@ -18,7 +18,7 @@ const Experience = () => {
       title: "Estudio Frenkel",
       date: "March, 2022",
       img: estudiofrenkel_img,
-      description: "I'm currently working on my first job as a web developer, programming a web app for a small lawyers firm from Buenos Aires. I'm using React.JS for the development.",
+      description: "My main task here was to develop a contact website for a small lawyers firm from Buenos Aires. I used React JS.",
       techs: "ReactJS, Reactstrap and pure CSS.",
       alt: "Estudio Frenkel"
     }
