@@ -33,7 +33,7 @@ const work = job
 
   return (
     <div>
-        <Card sx={{ maxWidth: 345, my:3, mx:5 }}>
+        <Card sx={{ maxWidth: 345, my:3, mx:5, borderRadius:5, boxShadow:10 }}>
         <CardHeader
             title={work.title}
             subheader={work.date}

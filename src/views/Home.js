@@ -2,6 +2,7 @@ import React from 'react'
 import ProfileCard from '../components/ProfileCard'
 import { Grid } from '@mui/material';
 import CoverLetter from '../components/CoverLetter'
+import Experience from './Experience'
 import '../App.css'
 
 const Home = () => {
@@ -12,6 +13,9 @@ const Home = () => {
     </Grid>
     <Grid>
       <CoverLetter/>
+    </Grid>
+    <Grid>
+      <Experience />
     </Grid>
     </div>
   )

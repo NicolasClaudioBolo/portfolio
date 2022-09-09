@@ -28,7 +28,7 @@ const card = (
 
 export default function OutlinedCard() {
   return (
-    <Box sx={{ minWidth: 275, mx:5, my:3, borderRadius:45}}>
+    <Box sx={{ minWidth: 275, mx:28, my:3}}>
       <Card variant="outlined">{card}</Card>
     </Box>
   );
