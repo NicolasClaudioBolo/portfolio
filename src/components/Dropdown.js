@@ -85,7 +85,7 @@ export default function MenuListComposition() {
                   placement === 'bottom-start' ? 'left top' : 'left bottom',
               }}
             >
-              <Paper>
+              <Paper sx={{borderRadius: 5, boxShadow: 20, ml:-3.5}}>
                 <ClickAwayListener onClickAway={handleClose}>
                   <MenuList
                     autoFocusItem={open}
@@ -99,9 +99,6 @@ export default function MenuListComposition() {
                     </MenuItem>
                     <MenuItem onClick={handleClose} style={{textDecoration:"none", color:"black"}}>
                       Skills
-                    </MenuItem>
-                    <MenuItem onClick={handleClose} style={{textDecoration:"none", color:"black"}}>
-                      Contact
                     </MenuItem>
                   </MenuList>
                 </ClickAwayListener>

@@ -6,7 +6,6 @@ import Footer from './components/Footer';
 import Home from './views/Home';
 import Experience from './views/Experience';
 import Skills from './views/Skills';
-import Contact from './views/Contact';
 import { ThemeProvider, createTheme } from '@mui/material/styles';
 
 const theme = createTheme({
@@ -19,7 +18,7 @@ const theme = createTheme({
     },
     secondary: {
       light: '#ff7961',
-      main: '#f44336',
+      main: '#fff',
       dark: '#FFSD2A',
       contrastText: '#000',
     },
@@ -39,7 +38,6 @@ const App = () => {
               <Route path='/' element={<Home />} />
               <Route path='/Experience' element={<Experience />} />
               <Route path='/Skills' element={<Skills />} />
-              <Route path='/Contact' element={<Contact />} />
             </Routes>
           <Footer />
         </Router> 

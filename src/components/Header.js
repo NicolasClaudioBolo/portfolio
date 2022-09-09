@@ -56,7 +56,7 @@ export default function SearchAppBar() {
         <Toolbar sx={{ml:6}}>
           <Dropdown />
           <Link to='/'>
-            <HomeIcon sx={{ fontSize: 40, ml:16, color: "#f44336" }} />
+            <HomeIcon sx={{ fontSize: 40, ml:16, color: "#fff" }} />
           </Link>
         </Toolbar>
       </AppBar>
