@@ -30,7 +30,7 @@ const theme = createTheme({
 
 const App = () => {
   return (
-    <div>
+    <div style={{height:100}}>
       <ThemeProvider theme={theme}>
         <Router>
           <Header />

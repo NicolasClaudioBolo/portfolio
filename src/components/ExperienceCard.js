@@ -64,7 +64,7 @@ const work = job
                 {work.techs}
             </Typography>
             <Typography>
-                <a href="#">View code</a>
+                <a href={work.target} target='blank'>View code</a>
             </Typography>
             </CardContent>
         </Collapse>

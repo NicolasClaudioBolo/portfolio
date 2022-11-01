@@ -3,6 +3,7 @@ import ExperienceCard from '../components/ExperienceCard'
 import { Grid } from '@mui/material'
 import shopolytics_img from '../assets/shopolytics.png'
 import estudiofrenkel_img from '../assets/estudio_frenkel.png'
+import pulsodiario_img from '../assets/pulso_diario.png'
 
 const Experience = () => {
   const data = [
@@ -12,7 +13,8 @@ const Experience = () => {
       img: shopolytics_img,
       description: "I developed a dashboard along side a SSR front end developer for the landing page of our clients website.",
       techs: "VueJS, Tailwind, Laravel and Docker",
-      alt: "Shopolytics"
+      alt: "Shopolytics",
+      target: "https://github.com/NicolasClaudioBolo/shopolytics"
     },
     {
       title: "Estudio Frenkel",
@@ -20,7 +22,17 @@ const Experience = () => {
       img: estudiofrenkel_img,
       description: "My main task here was to develop a contact website for a small lawyers firm from Buenos Aires. I used React JS.",
       techs: "ReactJS, Reactstrap and pure CSS.",
-      alt: "Estudio Frenkel"
+      alt: "Estudio Frenkel",
+      target: "https://github.com/NicolasClaudioBolo/estudiofrenkel"
+    },
+    {
+      title: "Pulso Diario",
+      date: "September, 2022",
+      img: pulsodiario_img,
+      description: "I'm currently developing a local news website using JS vanilla with pure HTML and CSS.",
+      techs: "JavaScript, HTML5 and CSS3",
+      alt: "Pulso Diario",
+      target: "https://www.pulsodiario.com.ar"
     }
   ]
   return (

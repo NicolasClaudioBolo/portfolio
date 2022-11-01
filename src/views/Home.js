@@ -7,12 +7,10 @@ import '../App.css'
 const Home = () => {
   return (
     <div>
-    <Grid className='App'>
-      <ProfileCard />
-    </Grid>
-    <Grid>
-      <CoverLetter/>
-    </Grid>
+      <Grid className='App'>
+        <ProfileCard />
+        <CoverLetter/>
+      </Grid>
     </div>
   )
 }
