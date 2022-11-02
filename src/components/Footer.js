@@ -11,7 +11,7 @@ import WhatsAppIcon from  '@mui/icons-material/WhatsApp'
 const ResponsiveAppBar = () => {
  
   return (
-    <AppBar position="static">
+    <AppBar position="static" style={{opacity: 0.85}}>
       <Container maxWidth="xl">
         <Toolbar disableGutters>
           <Box sx={{ flexGrow: 1, display: { xs: 'flex', md: 'flex' } }}>

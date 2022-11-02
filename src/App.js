@@ -7,6 +7,7 @@ import Footer from './components/Footer';
 import Home from './views/Home';
 import Experience from './views/Experience';
 import Skills from './views/Skills';
+import Resume from './views/Resume';
 
 const theme = createTheme({
   palette: {
@@ -38,6 +39,7 @@ const App = () => {
               <Route path='/' element={<Home />} />
               <Route path='/Experience' element={<Experience />} />
               <Route path='/Skills' element={<Skills />} />
+              <Route path='/Resume' element={<Resume />} />
             </Routes>
           <Footer />
         </Router> 

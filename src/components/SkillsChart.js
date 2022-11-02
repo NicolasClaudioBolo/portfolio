@@ -12,7 +12,46 @@ import json_logo from '../assets/json.png';
 import { Grid } from '@mui/material';
 
 
-const skills = [react_logo, javascript_logo, css_logo, html_logo, firebase_logo, tailwind_logo, sass_logo, vue_logo, bootstrap_logo, json_logo]
+const skills = [{
+    image: react_logo,
+    alt: 'ReactJS'
+  }, 
+  {
+    image: javascript_logo,
+    alt: 'JavaScript'
+  }, 
+  {
+    image: css_logo,
+    alt: 'CSS'
+  }, 
+  {
+    image: html_logo,
+    alt: 'HTML'
+  }, 
+  {
+    image: firebase_logo,
+    alt: 'Firebase'
+  }, 
+  {
+    image: tailwind_logo,
+    alt: 'Tailwind'
+  }, 
+  {
+    image: sass_logo,
+    alt: 'SASS'
+  }, 
+  {
+    image: vue_logo,
+    alt: 'VueJS'
+  }, 
+  {
+    image: bootstrap_logo,
+    alt: 'Bootstrap'
+  },
+  {
+    image: json_logo,
+    alt: 'JSON'
+  }]
 
 const SkillsChart = () => {
   return (
@@ -26,7 +65,7 @@ const SkillsChart = () => {
           {skills.map((skill, i)=>{
             return(
               <div direction="column" xs={12} sm={6}> 
-                <img src={skill} key={i} style={{height: 100, padding:10}} />
+                <img src={skill.image} key={i} style={{height: 100, padding:10}} alt={skill.alt} />
               </div>
             )
           })}

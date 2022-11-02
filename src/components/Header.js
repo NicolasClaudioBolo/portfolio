@@ -8,7 +8,7 @@ import {Link} from 'react-router-dom'
 
 export default function SearchAppBar() {
   return (
-    <Box sx={{ flexGrow: 1 }}>
+    <Box sx={{ flexGrow: 1 }} style={{opacity: 0.85}}>
       <AppBar position="static">
         <Toolbar sx={{ml:6}}>
           <Dropdown />

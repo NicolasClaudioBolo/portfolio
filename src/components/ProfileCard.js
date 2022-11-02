@@ -8,6 +8,7 @@ import Typography from '@mui/material/Typography';
 import img from '../assets/profile_pic.png'
 import { Grid } from '@mui/material';
 import profilePic from '../assets/profile_pic.png'
+import { Link } from 'react-router-dom';
 
 export default function MediaCard() {
   return (
@@ -34,7 +35,7 @@ export default function MediaCard() {
             </Typography>
           </CardContent>
           <CardActions>
-            <Button size="small" sx={{mx:'auto'}} href='../assets/profile_pic.png' download={profilePic}>Download resume</Button>
+            <Link size="small" style={{marginLeft:100, textDecoration:'none', color:'black'}} to='/Resume'>View resume</Link>
             {/* <a size="small" sx={{mx:'auto'}} href='../assets/profile_pic.png' download='profile_pic.png'>Download resume</a> */}
           </CardActions>
         </Card>
