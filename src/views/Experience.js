@@ -3,6 +3,7 @@ import ExperienceCard from '../components/ExperienceCard'
 import { Grid, requirePropFactory } from '@mui/material'
 import shopolytics_img from '../assets/shopolytics.png'
 import estudiofrenkel_img from '../assets/estudio_frenkel.png'
+import pulsodiario_img from '../assets/shopolytics.png'
 
 const Experience = () => {
   const data = [
@@ -21,6 +22,14 @@ const Experience = () => {
       description: "My main task here was to develop a contact website for a small lawyers firm from Buenos Aires. I used React JS.",
       techs: "ReactJS, Reactstrap and pure CSS.",
       alt: "Estudio Frenkel"
+    },
+    {
+      title:"Pulso Diario",
+      date:"September, 2022",
+      img: pulsodiario_img,
+      description: "I developed and designed a local news website using only HTML, CSS and Vanilla JS",
+      techs: "JavaScript, Bootstrap, HTML5",
+      alt: "Pulso Diario"
     }
   ]
   return (

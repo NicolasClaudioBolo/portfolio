@@ -6,13 +6,12 @@ import Menu from '@mui/material/Menu';
 import Container from '@mui/material/Container';
 import GitHubIcon from '@mui/icons-material/GitHub';
 import LinkedInIcon from '@mui/icons-material/LinkedIn';
-import EmailIcon from '@mui/icons-material/Email';
 import WhatsAppIcon from  '@mui/icons-material/WhatsApp'
 
 const ResponsiveAppBar = () => {
  
   return (
-    <AppBar position="static">
+    <AppBar position="static" sx={{bgcolor: '#000000'}}>
       <Container maxWidth="xl">
         <Toolbar disableGutters>
           <Box sx={{ flexGrow: 1, display: { xs: 'flex', md: 'flex' } }}>
