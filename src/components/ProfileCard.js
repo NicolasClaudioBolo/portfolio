@@ -34,7 +34,7 @@ export default function MediaCard() {
             </Typography>
           </CardContent>
           <CardActions>
-            <Button size="small" sx={{mx:'auto'}} href='../assets/profile_pic.png' download={profilePic}>Download resume</Button>
+            <Button size="small" sx={{mx:'auto'}} href='https://pdfhost.io/v/xh~3G20.i_Nicolas_Bolo_Front_End_Developer' target='blank'>View resume</Button>
             {/* <a size="small" sx={{mx:'auto'}} href='../assets/profile_pic.png' download='profile_pic.png'>Download resume</a> */}
           </CardActions>
         </Card>

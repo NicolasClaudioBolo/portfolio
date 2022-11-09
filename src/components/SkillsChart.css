@@ -1,0 +1,14 @@
+.heart-beat{
+    height: 100px;
+    padding: 10px;
+    animation-duration: 750ms;
+    animation-name: identifier;
+    animation-iteration-count: infinite;
+    animation-direction: alternate;
+}
+
+@keyframes identifier {
+    from {transform: scale(1,1);}
+    to  {transform: scale(1.1,1.1);}
+}
+

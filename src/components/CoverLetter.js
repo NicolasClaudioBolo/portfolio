@@ -14,7 +14,7 @@ const bull = (
 );
 
 const card = (
-  <React.Fragment>
+  <Card>
     <CardContent sx={{mx:1, my:1}}>
       <Typography sx={{ fontSize: 20 }} color="text.secondary" gutterBottom>
         About me
@@ -23,13 +23,13 @@ const card = (
         I'm a young front end developer, proactive, with aims to grow professionally and make use of the knowledge acquired in Coderhouse bootcamps mentioned in my resume. I'm truly eager to start my professional career in the IT field. I'm constantly learning new dev tools, and I have a great ability to work in teams.
       </Typography>
     </CardContent>
-  </React.Fragment>
+  </Card>
 );
 
 export default function OutlinedCard() {
   return (
-    <Box sx={{ minWidth: 275, mx:28, my:3}}>
-      <Card variant="outlined">{card}</Card>
+    <Box sx={{maxWidth:500,mx:5, my:3}}>
+      <Card variant="outlined" sx={{borderRadius:5}}>{card}</Card>
     </Box>
   );
 }
