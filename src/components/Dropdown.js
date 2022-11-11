@@ -9,7 +9,7 @@ import Popper from '@mui/material/Popper';
 import MenuItem from '@mui/material/MenuItem';
 import MenuList from '@mui/material/MenuList';
 import Stack from '@mui/material/Stack';
-import { Link } from 'react-router-dom';
+import {Link as LinkScroll} from 'react-scroll'
 
 export default function MenuListComposition() {
   const [open, setOpen] = React.useState(false);
@@ -92,13 +92,20 @@ export default function MenuListComposition() {
                     id="composition-menu"
                     aria-labelledby="composition-button"
                     onKeyDown={handleListKeyDown}>
-                    <MenuItem onClick={handleClose}>
-                      <Link to="/Experience" style={{textDecoration:"none", color:"black"}}>
-                            Experience
-                      </Link>
+                    <MenuItem>
+                      <LinkScroll to="about" spy={true} smooth={true} offset={-100} duration={500} onClick={handleClose} style={{textDecoration:"none", color:"black"}}>
+                            About me
+                      </LinkScroll>
                     </MenuItem>
-                    <MenuItem onClick={handleClose} style={{textDecoration:"none", color:"black"}}>
-                      Skills
+                    <MenuItem>
+                      <LinkScroll to="experience" spy={true} smooth={true} offset={-50} duration={500} onClick={handleClose} style={{textDecoration:"none", color:"black"}}>
+                            Experience
+                      </LinkScroll>
+                    </MenuItem>
+                    <MenuItem style={{textDecoration:"none", color:"black"}}>
+                    <LinkScroll to="skills" spy={true} smooth={true} offset={-100} duration={500} onClick={handleClose} style={{textDecoration:"none", color:"black"}}>
+                            Skills
+                      </LinkScroll>
                     </MenuItem>
                   </MenuList>
                 </ClickAwayListener>

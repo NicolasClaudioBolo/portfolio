@@ -56,7 +56,7 @@ const skills = [{
 
 const SkillsChart = () => {
 return (
-  <div container style={{padding:20, marginTop:0, marginBottom:128}}>
+  <div container style={{padding:20, marginTop:0, marginBottom:28}} id='skills'>
     <Grid
       container
       direction="row"

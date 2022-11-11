@@ -14,7 +14,7 @@ const bull = (
 );
 
 const card = (
-  <Card>
+  <Card id='about'>
     <CardContent sx={{mx:1, my:1}}>
       <Typography sx={{ fontSize: 20 }} color="text.secondary" gutterBottom>
         About me

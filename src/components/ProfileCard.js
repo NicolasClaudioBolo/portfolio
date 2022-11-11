@@ -16,7 +16,9 @@ export default function MediaCard() {
       direction="row"
       justifyContent="center"
       alignItems="center"
-      sx={{ my: 3 }}>
+      sx={{ mb: 3, mt:10 }}
+      id='top'
+      >
         <Card sx={{ maxWidth: 300, borderRadius:5, boxShadow:10 }}>
           <CardMedia
             component="img"
