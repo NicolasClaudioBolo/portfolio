@@ -9,8 +9,10 @@ import Collapse from '@mui/material/Collapse';
 import IconButton from '@mui/material/IconButton';
 import Typography from '@mui/material/Typography';
 import ExpandMoreIcon from '@mui/icons-material/ExpandMore';
-import img from '../assets/shopolytics.png'
-import img1 from '../assets/estudio_frenkel.png'
+import './ExperienceCard.css'
+
+
+
 
 const ExpandMore = styled((props) => {
   const { expand, ...other } = props;
@@ -31,9 +33,25 @@ export default function ExperienceCard({job}) {
 
 const work = job
 
+// const fadein = document.querySelector('.fadein');
+// fadein.classList.remove('fadein-transition');
+
+
+// const observer = new IntersectionObserver(entries => {
+//   entries.forEach(entry => {
+//     if (entry.isIntersecting) {
+//       fadein.classList.add('fadein-transition');
+//       return;
+//     }
+
+//     fadein.classList.remove('fadein-transition');
+//   });
+// });
+
+// observer.observe(document.querySelector('.fadein-wrapper'));
   return (
-    <div>
-        <Card sx={{ maxWidth: 345, my:3, mx:5, borderRadius:5, boxShadow:10 }}>
+    <div className='fadein-wrapper'>
+        <Card sx={{ maxWidth: 345, my:3, mx:5, borderRadius:5, boxShadow:10 }} className='fadein fadein-transition'>
         <CardHeader
             title={work.title}
             subheader={work.date}
@@ -74,4 +92,6 @@ const work = job
     </div>
   );
 }
+
+
 

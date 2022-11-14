@@ -1,0 +1,29 @@
+.fade{
+    opacity: 1;
+}
+
+@media (prefers-reduced-motion: no-preference){
+    .fadein{
+        opacity: 1;
+        animation: fade 3s 1;
+    }
+}
+
+@keyframes fade {
+    from {opacity:0}
+    to  {opacity:1}
+}
+
+/* .upwards{
+    top:0;
+    animation: normal;
+    animation-duration: 3s;
+    animation-iteration-count: 1;
+    animation-name: up;
+    transition: ease-out;
+}
+
+@keyframes up {
+    from {top:10vh; position:relative}
+    to {top:0}
+} */

@@ -1,10 +1,11 @@
 import React from 'react'
 import ExperienceCard from '../components/ExperienceCard'
-import { Grid, requirePropFactory } from '@mui/material'
+import { Grid } from '@mui/material'
 import shopolytics_img from '../assets/shopolytics.png'
 import estudiofrenkel_img from '../assets/estudio_frenkel.png'
 import pulsodiario_img from '../assets/shopolytics.png'
 import portfolio_img from '../assets/portfolio.png'
+import '../components/ExperienceCard.css'
 
 const Experience = () => {
   const data = [
