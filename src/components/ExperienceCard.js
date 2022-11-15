@@ -31,27 +31,44 @@ export default function ExperienceCard({job}) {
     setExpanded(!expanded);
   };
 
+//   const options = {
+//     root: null,
+//     rootMargin: "0px",
+//     threshold: 1.0
+//   }
+// const useElementOnScreen = (options) => {
+//   const containerRef = useRef(null)
+//   const [isVisible, setIsVisible] = useState(false)
+
+//   const callbackFunction = (entries) => {
+//     const [entry] = entries
+//     setIsVisible(entry.isIntersecting)
+//   }
+
+//   useEffect(() => {
+//     console.log("containerRef", containerRef.current)
+//   const observer = new IntersectionObserver(callbackFunction, options)
+//     observer.observe(ExperienceCard)
+//       if (containerRef.current) observer.observe(containerRef.current)
+//       return () => {
+//         if (containerRef.current) observer.unobserve(containerRef.current)
+//       }
+//     }, [containerRef, options])
+//   return [containerRef, isVisible]
+
+// }
+
+// const [containerRef, isVisible] = useElementOnScreen({
+//     root: null,
+//     rootMargin: "0px",
+//     threshold: 1.0
+// })
+
 const work = job
 
-// const fadein = document.querySelector('.fadein');
-// fadein.classList.remove('fadein-transition');
-
-
-// const observer = new IntersectionObserver(entries => {
-//   entries.forEach(entry => {
-//     if (entry.isIntersecting) {
-//       fadein.classList.add('fadein-transition');
-//       return;
-//     }
-
-//     fadein.classList.remove('fadein-transition');
-//   });
-// });
-
-// observer.observe(document.querySelector('.fadein-wrapper'));
   return (
-    <div className='fadein-wrapper'>
-        <Card sx={{ maxWidth: 345, my:3, mx:5, borderRadius:5, boxShadow:10 }} className='fadein fadein-transition'>
+    <div>
+        <Card sx={{ maxWidth: 345, my:3, mx:5, borderRadius:5, boxShadow:10 }}>
         <CardHeader
             title={work.title}
             subheader={work.date}

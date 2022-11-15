@@ -7,7 +7,7 @@ import pulsodiario_img from '../assets/shopolytics.png'
 import portfolio_img from '../assets/portfolio.png'
 import '../components/ExperienceCard.css'
 
-const Experience = () => {
+export default function Experience () {
   const data = [
     {
       title: "Shopolytics",
@@ -46,6 +46,8 @@ const Experience = () => {
       target: ""
     }
   ]
+
+
   return (
     <div container id='experience'>
     <Grid
@@ -65,5 +67,3 @@ const Experience = () => {
      </div>
   )
 }
-
-export default Experience
