@@ -13,7 +13,8 @@ import { Grid } from '@mui/material';
 import './SkillsChart.css'
 
 
-const skills = [{
+const skills = [
+{
   image: react_logo,
   alt: 'ReactJS'
 }, 

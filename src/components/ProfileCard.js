@@ -6,6 +6,7 @@ import CardMedia from '@mui/material/CardMedia';
 import Typography from '@mui/material/Typography';
 import img from '../assets/profile_pic.png'
 import { Grid } from '@mui/material';
+import './ProfileCard.css';
 
 export default function MediaCard() {
   return (
@@ -34,7 +35,7 @@ export default function MediaCard() {
             </Typography>
           </CardContent>
           <CardActions sx={{mx:10}}>
-            <a href='/resume.pdf' download='NicolasBoloFrontendDev.pdf' variant="contained" color="primary" sx={{mx:10, mb:3}} style={{fontSize:'larger', color: 'white', borderRadius: 5, backgroundColor: '#333', textDecoration: 'none', padding:5}}>
+            <a href='/resume.pdf' download='NicolasBoloFrontendDev.pdf' variant="contained" color="primary" sx={{mx:10, mb:3}} id='download-button'>
               Download resume
             </a>
           </CardActions>
