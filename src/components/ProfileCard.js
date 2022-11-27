@@ -7,9 +7,16 @@ import Button from '@mui/material/Button';
 import Typography from '@mui/material/Typography';
 import img from '../assets/profile_pic.png'
 import { Grid } from '@mui/material';
-import profilePic from '../assets/profile_pic.png'
 
 export default function MediaCard() {
+
+  // const onDownload = () => {
+  //   const link = document.createElement("a");
+  //   link.download = `resume.pdf`;
+  //   link.href = "../src/assets/resume.pdf";
+  //   link.click();
+  // };
+
   return (
       <Grid
       container
@@ -32,12 +39,13 @@ export default function MediaCard() {
               Nicolas Bolo
             </Typography>
             <Typography gutterBottom variant="h4" component="div">
-              Front End Developer
+              Frontend developer
             </Typography>
           </CardContent>
-          <CardActions>
-            <Button size="small" sx={{mx:'auto'}} href='https://pdfhost.io/v/xh~3G20.i_Nicolas_Bolo_Front_End_Developer' target='blank'>View resume</Button>
-            {/* <a size="small" sx={{mx:'auto'}} href='../assets/profile_pic.png' download='profile_pic.png'>Download resume</a> */}
+          <CardActions sx={{mx:10}}>
+            <a href='/resume.pdf' download='NicolasBoloFrontendDev.pdf' variant="contained" color="primary" sx={{mx:10, mb:3}} style={{fontSize:'larger', color: 'white', borderRadius: 5, backgroundColor: '#333', textDecoration: 'none', padding:5}}>
+              Download resume
+            </a>
           </CardActions>
         </Card>
       </Grid>

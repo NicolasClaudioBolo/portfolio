@@ -3,12 +3,13 @@ import ExperienceCard from '../components/ExperienceCard'
 import { Grid } from '@mui/material'
 import shopolytics_img from '../assets/shopolytics.png'
 import estudiofrenkel_img from '../assets/estudio_frenkel.png'
-import pulsodiario_img from '../assets/shopolytics.png'
+import pulsodiario_img from '../assets/pulso_diario.png'
 import portfolio_img from '../assets/portfolio.png'
 import '../components/ExperienceCard.css'
 
 export default function Experience () {
   const data = [
+    // ['ReactJS', 'VueJS', 'JavaScript', 'Tailwind', 'MUI', 'Reactstrap', 'Laravel', 'Docker', 'CSS', 'HTML5'],
     {
       title: "Shopolytics",
       date: "May, 2022",
@@ -19,22 +20,22 @@ export default function Experience () {
       target: "https://github.com/NicolasClaudioBolo/shopolytics"
     },
     {
+      title: "Pulso Diario",
+      date: "September, 2022",
+      img: pulsodiario_img,
+      description: "I'm currently developing a local news website using JS vanilla with pure HTML and CSS. I'm developing a ReactJS version for better performance",
+      techs: "JavaScript, HTML5 and CSS",
+      alt: "Pulso Diario",
+      target: "https://www.pulsodiario.com.ar"
+    },
+    {
       title: "Estudio Frenkel",
       date: "March, 2022",
       img: estudiofrenkel_img,
       description: "My main task here was to develop a contact website for a small lawyers firm from Buenos Aires. I used React JS.",
-      techs: "ReactJS, Reactstrap and pure CSS.",
+      techs: "ReactJS, Reactstrap and CSS.",
       alt: "Estudio Frenkel",
       target: "https://github.com/NicolasClaudioBolo/EstudioFrenkel"
-    },
-    {
-      title: "Pulso Diario",
-      date: "September, 2022",
-      img: pulsodiario_img,
-      description: "I'm currently developing a local news website using JS vanilla with pure HTML and CSS.",
-      techs: "JavaScript, HTML5 and CSS3",
-      alt: "Pulso Diario",
-      target: "https://www.pulsodiario.com.ar"
     },
     {
       title: "My portfolio",

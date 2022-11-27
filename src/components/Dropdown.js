@@ -9,7 +9,7 @@ import Popper from '@mui/material/Popper';
 import MenuItem from '@mui/material/MenuItem';
 import MenuList from '@mui/material/MenuList';
 import Stack from '@mui/material/Stack';
-import {Link as LinkScroll} from 'react-scroll'
+import {Link as LinkScroll} from 'react-scroll';
 
 export default function MenuListComposition() {
   const [open, setOpen] = React.useState(false);
@@ -98,7 +98,7 @@ export default function MenuListComposition() {
                       </LinkScroll>
                     </MenuItem>
                     <MenuItem>
-                      <LinkScroll to="experience" spy={true} smooth={true} offset={-50} duration={500} onClick={handleClose} style={{textDecoration:"none", color:"black"}}>
+                      <LinkScroll to="experience" spy={true} smooth={true} offset={-15} duration={500} onClick={handleClose} style={{textDecoration:"none", color:"black"}}>
                             Experience
                       </LinkScroll>
                     </MenuItem>
